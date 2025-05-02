@@ -1,19 +1,11 @@
-## Deprecation Notice
-
-This public repository is no longer maintained. Please see [this issue](https://github.com/SAP/gorfc/issues/42) for details.
-
-![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
-
----
-
 # SAP NetWeawer RFC SDK client bindings for GO
 
 For more details on the SAP NetWeaver Remote Function Call (RFC) Software Development Kit (SDK) please [see its support page](https://support.sap.com/en/product/connectors/nwrfcsdk.html).
 
-[![license](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/SAP/gorfc/blob/master/LICENSE)
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP/gorfc)](https://api.reuse.software/badge/github.com/SAP/gorfc)
-[![Go Report Card](https://goreportcard.com/badge/github.com/SAP/gorfc)](https://goreportcard.com/report/github.com/SAP/gorfc)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/SAP/gorfc/gorfc)
+[![license](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/joshelboy/gorfc/blob/master/LICENSE)
+[![REUSE status](https://api.reuse.software/badge/github.com/joshelboy/gorfc)](https://api.reuse.software/badge/github.com/joshelboy/gorfc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/joshelboy/gorfc)](https://goreportcard.com/report/github.com/joshelboy/gorfc)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/joshelboy/gorfc/gorfc)
 
 ## Features
 
@@ -24,7 +16,7 @@ For more details on the SAP NetWeaver Remote Function Call (RFC) Software Develo
 
 - macOS, Linux
 
-- Windows is not supported until the [#21](https://github.com/SAP/gorfc/issues/21#issuecomment-716469783) fixed
+- Windows is not supported until the [#21](https://github.com/joshelboy/gorfc/issues/21#issuecomment-716469783) fixed
 
 ## Requirements
 
@@ -128,8 +120,8 @@ export CGO_LDFLAGS="-L $SAPNWRFC_HOME/lib"
 export CGO_CFLAGS_ALLOW=.*
 export CGO_LDFLAGS_ALLOW=.*
 go get github.com/stretchr/testify
-go get github.com/sap/gorfc
-cd $GOPATH/src/github.com/sap/gorfc/gorfc
+go get github.com/joshelboy/gorfc
+cd $GOPATH/src/github.com/joshelboy/gorfc/gorfc
 go build
 go install
 ```
@@ -137,7 +129,7 @@ go install
 To test the installation, run the example provided:
 
 ```bash
-cd $GOPATH/src/github.com/sap/gorfc/example
+cd $GOPATH/src/github.com/joshelboy/gorfc/example
 go run hello_gorfc.go
 ```
 
@@ -152,7 +144,7 @@ package main
 
 import (
     "fmt"
-    "github.com/sap/gorfc/gorfc"
+    "github.com/joshelboy/gorfc/gorfc"
     "github.com/stretchr/testify/assert"
     "reflect"
     "testing"
@@ -218,7 +210,7 @@ func main() {
 
 ## Licensing
 
-Please see our [LICENSE file](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available via the [REUSE tool](https://api.reuse.software/info/github.com/SAP/gorfc).
+Please see our [LICENSE file](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available via the [REUSE tool](https://api.reuse.software/info/github.com/joshelboy/gorfc).
 
 ## References
 

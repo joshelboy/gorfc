@@ -11,12 +11,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/sap/gorfc/gorfc/testutils"
+	"github.com/joshelboy/gorfc/gorfc/testutils"
 )
 
-//
 // NW RFC Lib Version
-//
 func TestNWRFCLibVersion(t *testing.T) {
 	major, minor, patchlevel := GetNWRFCLibVersion()
 	assert.Equal(t, uint(7500), major) // adapt to your NW RFC Lib version
@@ -24,9 +22,7 @@ func TestNWRFCLibVersion(t *testing.T) {
 	assert.Greater(t, patchlevel, uint(4))
 }
 
-//
 // Connection Tests
-//
 func TestConnect(t *testing.T) {
 	fmt.Println("Connection test: Open and Close")
 	c, err := ConnectionFromParams(abapSystem())
